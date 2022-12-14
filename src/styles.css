@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(220, 196, 252) 11.2%,
+    rgb(150, 199, 253) 100.2%
+  );
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+p {
+  /* color: black; */
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 0;
+  margin: 0;
+  opacity: 0.7;
+}
+
+/* Form section */
+.btn {
+  width: 100%;
+}
+
+/* Weather information */
+
+.container {
+  margin: 5% auto;
+}
+
+.weatherapp {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 60px 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  height: 500px;
+  line-height: 1.5;
+}
+
+.weather {
+  margin: 30px 0px;
+}
+
+.weather-info {
+  padding-right: 0;
+  text-align: left;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Temperature information */
+
+.temperature-info {
+  padding-left: 0;
+}
+
+.temperature-info a {
+  text-decoration: none;
+}
+
+#temperature {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.unit {
+  font-size: 28px;
+  position: relative;
+  top: -34px;
+}
+
+/* weather forecast */
+.weather-forecast {
+  line-height: 2;
+}
+
+.temp {
+  opacity: 0.7;
+}
+
+/* Attribution */
+
+attribution {
+  font-family: monospace;
+  opacity: 0.9;
+}
+
+attribution a {
+  text-decoration: none;
+}
