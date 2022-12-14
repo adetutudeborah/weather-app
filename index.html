@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  
+    <title>Weather App</title>
+ 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+     <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="src/styles.css" />
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/8ea8d3b22a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+   <div class="container">
+    <div class="weatherapp">
+      <form id = "search-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="text"
+              name="city"
+              id = "search-input"
+              placeholder="Enter a city"
+              class="form-control"
+            />
+          </div>
+          <div class="col-3">
+            <input type="submit" class="btn btn-primary search-button" value="Search" />
+          </div>
+        </div>
+      </form>
+
+      <div class="weather">
+        <div class="row">
+          <div class="col-7 weather-info">
+            <h1 id="cityName">Lagos</h1>
+            <p>
+              <span id="date">Tuesday 12:00</span> 
+              <span id="description">Cloudy</span>
+            </p>
+            <ul> 
+              <li>Humidity: <span id="humidity">84</span>%</li>
+              <li>Wind: <span id="wind">8</span>km/h</li>
+            </ul> 
+          </div>
+          <div class="col-5 temperature-info">
+              <span style='font-size:50px;'>&#9925;</span>
+              <span id="temperature">26</span>
+              <span class="unit">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="weather-forecast">
+        <div class="row text-center">
+          <div class="col">
+            <div class="date">Sun</div>
+            <div>☁</div>
+            <div class="temp">25°</div>
+          </div>
+          <div class="col">
+            <div class="date">Mon</div>
+            <div>🌧</div>
+            <div class="temp">27°</div>
+          </div>
+          <div class="col">
+            <div class="date">Tue</div>
+            <div>🌤</div>
+            <div class="temp">29°</div>
+          </div>
+          <div class="col">
+            <div class="date">Wed</div>
+            <div>☁</div>
+            <div class="temp">28°</div>
+          </div>
+          <div class="col">
+            <div class="date">Thur</div>
+            <div>🌦</div>
+            <div class="temp">26°</div>
+          </div>
+          <div class="col">
+            <div class="date">Fri</div>
+            <div>🌩</div>
+            <div class="temp">26°</div>
+          </div>
+          <div class="col">
+           <div class="date">Sat</div> 
+            <div>⛈</div> 
+            <div class="temp">27°</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    <attribution><a href="#" target="_blank">Open Source Code</a> By Adetutu Oluwasanmi</attribution>
+    </div>
+    </div>
+    
+
+<script src="src/script.js"></script>
+</body>
+</html>
