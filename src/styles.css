@@ -78,19 +78,31 @@ li {
 
 .temperature-info {
   padding-left: 0;
+  display: inline-block;
+  text-align: end;
 }
 
 .temperature-info a {
   text-decoration: none;
 }
 
+.temperature-info .active {
+  color: black;
+  cursor: default;
+}
+
+.temperature-info img {
+  vertical-align: top;
+  line-height: 2.5;
+}
+ 
 #temperature {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 600;
 }
 
 .unit {
-  font-size: 28px;
+  font-size: 25px;
   position: relative;
   top: -34px;
 }
