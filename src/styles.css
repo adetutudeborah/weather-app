@@ -141,17 +141,16 @@ li {
 /* Temperature information */
 
 .temperature-info {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .weather-temperature img {
-  width: 100px;
+  width: 120px;
   position: relative;
-  top: -18px;
+  top: -24px;
 }
 
 .weather-temperature strong {
-  margin-left: 5px;
   font-weight: 600;
   font-size: 80px;
   line-height: 0.8;
@@ -188,7 +187,7 @@ li {
 .weather-forecast {
   line-height: 2;
   border-bottom: 1px solid hsla(227, 10%, 46%, 0.2);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .weather-forecast-date {
@@ -209,9 +208,102 @@ li {
 .attribution {
   color: black;
   opacity: 0.9;
-  padding: 20px 0px;
+  padding: 1px 0px;
 }
 
 .attribution a {
   text-decoration: none;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 500px) {
+
+  .container {
+    padding-bottom: 50px;
+  }
+ 
+  .weather-data-section {
+  text-align: left;
+  line-height: 1.8;
+  padding-bottom: 20px;
+ }
+
+ .weather-forecast img {
+  width: 60px;
+  position: relative;
+  left: -18px;
+}
+
+.attribution {
+  font-size: 14px;
+}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 450px) { 
+
+ .container {
+  padding-bottom: 80px;
+}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 760px) { 
+
+ .col-sm-12 {
+    width: 50%;
+  }
+
+  .weather-temperature strong {
+    font-size: 70px;
+  }
+
+  .temperature-info .col-sm-12 {
+     padding-right: 0;
+     padding-left: 0;
+  }
+ }
+
+ @media only screen and (max-width: 300px) {
+
+  .container {
+    padding-bottom: 20px;
+  }
+
+  #cityName {
+    font-size: 40px;
+  }
+
+  #country {
+    font-size: 25px;
+  }
+
+  .weather-temperature {
+    text-align: center;
+  }
+
+  .weather-temperature strong {
+    font-size: 70px;
+  }
+
+  .weather-temperature img {
+    width: 100px;
+  }
+
+  .weather-forecast-date {
+    font-size: 14px;
+  }
+
+  .weather-forecast img {
+    width: 40px;
+    position: relative;
+    left: -10px;
+  }
+
+  .weather-forecast-temperatures {
+    font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 12px;
+  }
+ }
