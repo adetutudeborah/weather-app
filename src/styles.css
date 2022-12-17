@@ -3,13 +3,19 @@
 }
 
 body {
+  background-image: url(/images/weather-image.jpg);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
+  color: #2e5fa4;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 50px; 
   font-weight: 700;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 p {
@@ -28,11 +34,27 @@ ul {
 
 li {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 0;
   margin: 0;
-  opacity: 0.7;
 }
+
+.container {
+  background-color: #ffff;
+  margin: 2% auto;
+  padding: 40px 40px 0px;
+  border-radius: 20px;
+  max-width: 700px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.weatherapp {
+  margin: 0 auto;
+  max-height: 700px;
+}
+
+/* Background video */
 
 #background-video {
   width: 100vw;
@@ -46,34 +68,69 @@ li {
   z-index: -1;
 }
 
-/* Form section */
-.btn {
+
+/* Search engine */
+
+.searchEngine {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  background-color: #2e5fa4;
+}
+.form-control:focus {
+  background-color: #2e5fa4;
+}
+
+#city-input {
+  border: none;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffff;
+  font-weight: 500;
+}
+
+#city-input::placeholder {
+  color: #ffff;
+  font-weight: 500;
+  font-style: oblique;
+  opacity: 0.7;
+}
+
+#search-button-section {
+  padding-left: 0;
+}
+
+#search-button {
   width: 100%;
+  padding: 9px 0;
+  color: #ffff;
+  font-weight: 700;
+  background-color: #2e5fa4;
+  border: solid 1px #2e5fa4;
+  border-radius: 20px;
+  transition: all 200ms ease-in;
+}
+#search-button:hover {
+  background-color: #2e5fa4;
+  border: solid 1px #2e5fa4;
 }
 
 /* Weather information */
-
-.container {
-  margin: 5% auto;
-}
-
-.weatherapp {
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 60px 40px;
-  border-radius: 20px;
-  max-width: 700px;
-  height: 500px;
-  line-height: 1.5;
-}
 
 .weather {
   margin: 30px 0px;
 }
 
+#description {
+  text-transform: capitalize;
+}
+
 .weather-info {
   padding-right: 0;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .date {
@@ -84,52 +141,77 @@ li {
 /* Temperature information */
 
 .temperature-info {
-  padding-left: 0;
-  display: inline-block;
-  text-align: end;
+  margin-bottom: 10px;
 }
 
-.temperature-info a {
+.weather-temperature img {
+  width: 100px;
+  position: relative;
+  top: -18px;
+}
+
+.weather-temperature strong {
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 0.8;
+}
+
+.weather-temperature .unit {
+  font-size: 18px;
+}
+
+.weather-temperature {
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.weather-temperature a {
   text-decoration: none;
 }
 
-.temperature-info .active {
+.weather-temperature .active {
   color: black;
   cursor: default;
 }
 
-.temperature-info img {
-  vertical-align: top;
-  line-height: 2.5;
-}
- 
-#temperature {
-  font-size: 70px;
-  font-weight: 600;
+.weather-data-section {
+  text-align: right;
 }
 
-.unit {
-  font-size: 25px;
-  position: relative;
-  top: -34px;
+.weather-data {
+  font-weight: 900;
 }
 
 /* weather forecast */
 .weather-forecast {
   line-height: 2;
+  border-bottom: 1px solid hsla(227, 10%, 46%, 0.2);
+  padding-bottom: 30px;
 }
 
-.temp {
-  opacity: 0.7;
+.weather-forecast-date {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.weather-forecast img {
+  width: 70px;
+}
+
+.weather-forecast-temperatures .min-temperature {
+  opacity: 0.5;
 }
 
 /* Attribution */
 
-attribution {
-  font-family: monospace;
+.attribution {
+  color: black;
   opacity: 0.9;
+  padding: 20px 0px;
 }
 
-attribution a {
+.attribution a {
   text-decoration: none;
 }
