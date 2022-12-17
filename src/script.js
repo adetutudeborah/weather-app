@@ -169,4 +169,4 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 // Default City (so page isn't left blank)
 
-searchCity("Abuja");
+searchCity("Paris");
