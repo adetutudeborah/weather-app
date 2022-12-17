@@ -234,6 +234,10 @@ li {
   .weather-temperature img {
     width: 100px;
   }
+
+  .weather-info {
+    margin-bottom: 50px;
+  }
  
   .weather-data-section {
   text-align: left;
