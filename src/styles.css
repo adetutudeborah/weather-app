@@ -222,6 +222,18 @@ li {
   .container {
     padding-bottom: 50px;
   }
+
+  #cityName {
+    font-size: 40px;
+  }
+
+  .weather-temperature strong{
+    font-size: 60px;
+  }
+
+  .weather-temperature img {
+    width: 100px;
+  }
  
   .weather-data-section {
   text-align: left;
