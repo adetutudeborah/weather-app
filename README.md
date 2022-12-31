@@ -7,7 +7,8 @@ I created a weather app allows you to check the current weather in any city arou
 
 ### Links
 
-- [Live URL](https://incredible-faun-f2a2b7.netlify.app)
+- [Live URL - Netlify](https://incredible-faun-f2a2b7.netlify.app)
+- [Project Demo](https://twitter.com/adetutuoluwa2/status/1604784061507043328)
 
 ## My process
 
